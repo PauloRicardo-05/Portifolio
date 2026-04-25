@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de [SEU NOME] — Engenharia da Computação, projetos de software e hardware." />
+  <title>Paulo Ricardo · Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <header id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">Paulo Ricardo</a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#sobre">sobre</a></li>
+          <li><a href="#habilidades">habilidades</a></li>
+          <li><a href="#projetos">projetos</a></li>
+          <li><a href="#blog">blog</a></li>
+          <li><a href="#contato">contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right">
+        <button class="btn-theme" id="btn-theme" aria-label="Alternar tema">
+          <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <button class="btn-menu" id="btn-menu" aria-label="Menu">
+          <svg viewBox="0 0 24 24"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav class="nav-mobile" id="nav-mobile">
+      <a href="#sobre">sobre</a>
+      <a href="#habilidades">habilidades</a>
+      <a href="#projetos">projetos</a>
+      <a href="#blog">blog</a>
+      <a href="#contato">contato</a>
+    </nav>
+  </header>
+
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section id="hero">
+    <div class="container">
+
+      <div class="hero-available">
+        <span class="hero-dot"></span>
+        Disponível para oportunidades
+      </div>
+
+      <h1 class="hero-title">
+        Olá, eu sou<br>
+        <em>Paulo Ricardo</em>
+      </h1>
+
+      <p class="hero-desc">
+        Estudante de Engenharia da Computação em Ituiutaba - MG.
+        Desenvolvo desde landing pages e sistemas web até projetos embarcados com Arduino —
+        conectando software e hardware.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projetos" class="btn btn-primary">
+          Ver projetos
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <!-- Substitua o href pelo link real do seu CV no Google Drive ou similar -->
+        <a href="#" class="btn btn-secondary" target="_blank" rel="noopener">
+          Baixar CV
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SOBRE
+       ============================================================ -->
+  <section id="sobre">
+    <div class="container">
+      <p class="section-label">Sobre mim</p>
+
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <!-- EDITE: escreva sobre você em 2-3 parágrafos curtos -->
+          <p>
+            Sou estudante de Engenharia da Computação apaixonado por criar coisas que funcionam —
+            seja um sistema web, uma automação ou um circuito físico. Gosto especialmente de
+            projetos que conectam o mundo digital ao mundo real.
+          </p>
+          <p>
+            Tenho experiência com desenvolvimento frontend, sistemas backend e prototipagem
+            de hardware com Arduino. Estou sempre aprendendo e buscando aplicar o que aprendo
+            em projetos práticos.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+          <!-- EDITE: substitua os números reais -->
+          <div class="stat-card">
+            <div class="stat-num">+3</div>
+            <div class="stat-desc">Projetos de software</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">+2</div>
+            <div class="stat-desc">Projetos de hardware</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">7º</div>
+            <div class="stat-desc">Semestre na faculdade</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">2027</div>
+            <div class="stat-desc">Formatura prevista</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       HABILIDADES
+       ============================================================ -->
+  <section id="habilidades">
+    <div class="container">
+      <p class="section-label">Habilidades</p>
+
+      <div class="skill-filters">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="software">Software</button>
+        <button class="filter-btn" data-filter="hardware">Hardware</button>
+        <button class="filter-btn" data-filter="ferramentas">Ferramentas</button>
+      </div>
+
+      <!-- EDITE: adicione, remova ou altere as skills -->
+      <div class="skills-grid">
+        <span class="skill-pill" data-cat="software">HTML &amp; CSS</span>
+        <span class="skill-pill" data-cat="software">JavaScript</span>
+        <span class="skill-pill" data-cat="software">Python</span>
+        <span class="skill-pill" data-cat="software">C / C++</span>
+        <span class="skill-pill" data-cat="software">React</span>
+        <span class="skill-pill" data-cat="software">Node.js</span>
+        <span class="skill-pill" data-cat="hardware">Arduino</span>
+        <span class="skill-pill" data-cat="hardware">Eletrônica básica</span>
+        <span class="skill-pill" data-cat="hardware">Prototipagem</span>
+        <span class="skill-pill" data-cat="hardware">Sensores &amp; atuadores</span>
+        <span class="skill-pill" data-cat="ferramentas">Git &amp; GitHub</span>
+        <span class="skill-pill" data-cat="ferramentas">VS Code</span>
+        <span class="skill-pill" data-cat="ferramentas">Figma</span>
+        <span class="skill-pill" data-cat="ferramentas">Linux</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PROJETOS
+       ============================================================ -->
+  <section id="projetos">
+    <div class="container">
+
+      <div class="projetos-header">
+        <p class="section-label">Projetos</p>
+      </div>
+
+      <div class="proj-grid">
+
+        <!-- =====================================================
+             MODELO DE CARD — PROJETO SOLO COM CÓDIGO PÚBLICO
+             Duplique e edite para cada projeto
+             ===================================================== -->
+        <article class="proj-card">
+          <div class="proj-thumb">
+            <!-- OPÇÃO A: Use uma imagem/GIF do projeto -->
+            <img src="https://github.com/PauloRicardo-05/ParallaxModel/blob/main/imagens/Imagem%201.jpg?raw=true" >
+          </div>
+
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-type">Software</span>
+              <div class="proj-badges">
+                <span class="badge badge-solo">Solo</span>
+              </div>
+            </div>
+            <h3 class="proj-title">Demonstração Efeito Parallax</h3>
+            <p class="proj-desc">
+              Página responsiva focada em amostragem de um elemento visual, o efeito "parallax".
+            </p>
+            <div class="proj-tags">
+              <span class="proj-tag">HTML</span>
+              <span class="proj-tag">CSS</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://pauloricardo-05.github.io/ParallaxModel/" class="proj-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Demo ao vivo
+              </a>
+              <a href="https://github.com/PauloRicardo-05/ParallaxModel" class="proj-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- =====================================================
+             MODELO DE CARD — PROJETO SOLO COM CÓDIGO PÚBLICO
+             Duplique e edite para cada projeto
+             ===================================================== -->
+        <article class="proj-card">
+          <div class="proj-thumb">
+            <!-- OPÇÃO A: Use uma imagem/GIF do projeto -->
+            <img src="https://github.com/PauloRicardo-05/Projeto-site/blob/main/Imagens/image.png?raw=true" >
+          </div>
+
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-type">Software</span>
+              <div class="proj-badges">
+                <span class="badge badge-solo">Solo</span>
+              </div>
+            </div>
+            <h3 class="proj-title">Debugando o Futuro</h3>
+            <p class="proj-desc">
+              Site responsivo com o intuito de publicação de materiais sobre o mundo tech e relativos.
+            </p>
+            <div class="proj-tags">
+              <span class="proj-tag">HTML</span>
+              <span class="proj-tag">CSS</span>
+              <span class="proj-tag">JavaScript</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://pauloricardo-05.github.io/Projeto-site/todas.html" class="proj-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Demo ao vivo
+              </a>
+              <a href="https://github.com/PauloRicardo-05/Projeto-site" class="proj-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- =====================================================
+             MODELO DE CARD — PROJETO EM EQUIPE / CÓDIGO PRIVADO
+             ===================================================== -->
+        <article class="proj-card">
+          <div class="proj-thumb">
+            <!-- OPÇÃO A: Print ou GIF do sistema rodando -->
+            <img src="img/algoviz.png" alt="Print do sistema">
+
+          </div>
+
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-type">Software</span>
+              <div class="proj-badges">
+                <span class="badge badge-solo">Solo</span>
+              </div>
+            </div>
+            <h3 class="proj-title">Visualizador de algoritmos</h3>
+            <p class="proj-desc">
+              Sistema criado para visualizar a execução de algoritmos de ordenação e busca, com interface gráfica em React.
+            </p>
+            <!-- Minha contribuição — IMPORTANTE para projetos em equipe 
+            <div class="proj-contribution">
+              Minha contribuição: frontend completo em React e integração com a API REST.
+            </div>-->
+            <div class="proj-tags">
+              <span class="proj-tag">React</span>
+              <span class="proj-tag">Vite</span>
+              <span class="proj-tag">JavaScript</span>
+              <span class="proj-tag">HTML</span>
+              <span class="proj-tag">CSS</span>
+            </div>
+            <div class="proj-links">
+              <!-- Sem link de código — mostre o que puder -->
+               <!-- Sem link de código — mostre o que puder -->
+              <a href="https://algo-visualizer-mbcq-xi.vercel.app/" class="proj-link" target="_blank" rel="noopener">
+                <!--<svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                Ver demonstração-->
+                <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Demo ao vivo
+              </a>
+              <a href="https://github.com/PauloRicardo-05/algo-visualizer" class="proj-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- =====================================================
+             MODELO DE CARD — PROJETO ARDUINO / HARDWARE
+             ===================================================== -->
+        <article class="proj-card">
+          <div class="proj-thumb">
+            <!-- OPÇÃO A: Foto do hardware montado -->
+            <img src="img/AgroGestão.png" alt="Foto do projeto Arduino">
+
+            <!-- OPÇÃO B: Ícone placeholder -->
+            
+          </div>
+
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-type">Software · Sistema</span>
+              <div class="proj-badges">
+                <span class="badge badge-team">Equipe</span>
+              </div>
+            </div>
+            <h3 class="proj-title">Agro Gestão</h3>
+            <p class="proj-desc">
+              Sistema dedicado a mostrar informações relevantes para o produtor rural, como dados
+              de gastos, receitas, lucros e outros indicadores importantes para a gestão eficiente da propriedade.
+            </p>
+             Minha contribuição — IMPORTANTE para projetos em equipe 
+            <div class="proj-contribution">
+              Minha contribuição: frontend completo em React e integração com a API REST.
+            </div>
+            <div class="proj-tags">
+              <span class="proj-tag">HTML</span>
+              <span class="proj-tag">CSS</span>
+              <span class="proj-tag">TypeScript</span>
+              <span class="proj-tag">Javascript</span>
+            </div>
+            <div class="proj-links">
+              <a href="javascript:void(0)" class="proj-link" onclick="openModal()">
+                <svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                Ver demonstração
+              </a>
+            </div>
+
+            <div id="videoModal" class="modal-overlay" onclick="closeModal()">
+              <div class="modal-content" onclick="event.stopPropagation()">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <video id="demoVideo" width="100%" controls>
+                  <source src="img/AgroGestão.mp4" type="video/mp4">
+                  Seu navegador não suporta o vídeo.
+                </video>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Adicione mais cards seguindo os modelos acima -->
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       BLOG
+       ============================================================ -->
+  <section id="blog">
+    <div class="container">
+      <p class="section-label">Blog / Artigos</p>
+
+      <div class="blog-list">
+        <!--
+          OPÇÃO A — artigo em site externo (LinkedIn, Medium, Dev.to etc):
+            <a href="https://linkedin.com/pulse/seu-artigo" target="_blank" rel="noopener">
+
+          OPÇÃO B — artigo local (arquivo dentro do projeto):
+            <a href="blog/nome-do-artigo.html">
+
+          Troque o href="#" pelo link real de cada artigo.
+        -->
+        <div class="blog-item">
+          <a href="blog/arduino-aprendizados.html"><span class="blog-title">O que aprendi construindo meu primeiro projeto com Arduino</span></a>
+          <span class="blog-date">Abr 2025</span>
+        </div>
+        <div class="blog-item">
+          <a href="blog/primeira-landing-page.html"><span class="blog-title">Como estruturei minha primeira landing page do zero</span></a>
+          <span class="blog-date">Mar 2025</span>
+        </div>
+        <div class="blog-item">
+          <a href="blog/hardware-e-software.html"><span class="blog-title">Hardware e software: o que me fez querer as duas áreas</span></a>
+          <span class="blog-date">Jan 2025</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTATO
+       ============================================================ -->
+  <section id="contato">
+    <div class="container">
+      <p class="section-label">Contato</p>
+
+      <div class="contato-inner">
+        <h2 class="contato-title">Vamos conversar?</h2>
+        <p class="contato-desc">
+          Aberto a oportunidades de estágio, projetos colaborativos e trocas de ideia.
+          Me encontra pelas redes abaixo ou me manda um e-mail.
+        </p>
+
+        <div class="social-links">
+          <!-- EDITE: substitua os href pelos seus links reais -->
+          <a href="https://www.linkedin.com/in/paulo-ricardo-9439a9263/" class="social-link" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/PauloRicardo-05" class="social-link" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a href="mailto:pr54582@gmail.com" class="social-link">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            E-mail
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="container">
+      <span class="footer-text">© 2025 Paulo Ricardo</span>
+      <span class="footer-text">Feito com HTML, CSS &amp; JS</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
