@@ -4,6 +4,12 @@ on:
   push:
     branches: [ main ]
 
+# Permissões explícitas para permitir que o job crie/atualize a branch gh-pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
