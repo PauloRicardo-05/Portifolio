@@ -18,7 +18,7 @@
   --radius-md: 10px;
   --radius-lg: 14px;
   --font: 'Inter', system-ui, sans-serif;
-  --max-w: 760px;
+  --max-w: 1100px;
   --nav-h: 56px;
   --transition: 0.18s ease;
 }
@@ -181,6 +181,28 @@ section { padding: 80px 0; }
   border-bottom: 0.5px solid var(--clr-border);
 }
 
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 28px;
+  align-items: center;
+}
+
+.hero-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-photo img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 14px;
+  object-fit: cover;
+  border: 0.5px solid var(--clr-border);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  background: var(--clr-bg-card);
+}
+
 .hero-available {
   display: inline-flex;
   align-items: center;
@@ -263,6 +285,30 @@ section { padding: 80px 0; }
   align-items: start;
 }
 
+.sobre-text--wide {
+  grid-column: 1 / -1;
+}
+
+.profile-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.profile-photo img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 0.5px solid var(--clr-border);
+  background: var(--clr-bg-soft);
+}
+.photo-hint {
+  font-size: 12px;
+  color: var(--clr-text-3);
+}
+
 .sobre-text p {
   font-size: 14px;
   color: var(--clr-text-2);
@@ -341,6 +387,14 @@ section { padding: 80px 0; }
   transition: all var(--transition);
 }
 .skill-pill.hidden { display: none; }
+.skill-pill.selected {
+  background: var(--clr-accent);
+  color: var(--clr-bg);
+  border-color: var(--clr-accent);
+}
+
+/* esconder projetos filtrados */
+.proj-card.hidden { display: none; }
 
 /* ============================================================
    PROJETOS
@@ -540,6 +594,9 @@ footer .container { display: flex; align-items: center; justify-content: space-b
   .btn-menu { display: flex; }
 
   #hero { padding: 64px 0 56px; }
+
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-photo { order: 2; margin-top: 18px; }
 
   .sobre-grid { grid-template-columns: 1fr; gap: 32px; }
   .proj-grid { grid-template-columns: 1fr; }

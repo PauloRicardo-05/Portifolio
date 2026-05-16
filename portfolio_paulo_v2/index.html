@@ -25,7 +25,6 @@
           <li><a href="#sobre">sobre</a></li>
           <li><a href="#habilidades">habilidades</a></li>
           <li><a href="#projetos">projetos</a></li>
-          <li><a href="#blog">blog</a></li>
           <li><a href="#contato">contato</a></li>
         </ul>
       </nav>
@@ -46,7 +45,6 @@
       <a href="#sobre">sobre</a>
       <a href="#habilidades">habilidades</a>
       <a href="#projetos">projetos</a>
-      <a href="#blog">blog</a>
       <a href="#contato">contato</a>
     </nav>
   </header>
@@ -58,32 +56,40 @@
   <section id="hero">
     <div class="container">
 
-      <div class="hero-available">
-        <span class="hero-dot"></span>
-        Disponível para oportunidades
-      </div>
+      <div class="hero-grid">
+        <div class="hero-main">
+          <div class="hero-available">
+            <span class="hero-dot"></span>
+            Disponível para oportunidades
+          </div>
 
-      <h1 class="hero-title">
-        Olá, eu sou<br>
-        <em>Paulo Ricardo</em>
-      </h1>
+          <h1 class="hero-title">
+            Olá, eu sou<br>
+            <em>Paulo Ricardo</em>
+          </h1>
 
-      <p class="hero-desc">
-        Estudante de Engenharia da Computação em Ituiutaba - MG.
-        Desenvolvo desde landing pages e sistemas web até projetos embarcados com Arduino —
-        conectando software e hardware.
-      </p>
+          <p class="hero-desc">
+            Estudante de Engenharia da Computação em Ituiutaba - MG.
+            Desenvolvo desde landing pages e sistemas web até projetos embarcados com Arduino —
+            conectando software e hardware.
+          </p>
 
-      <div class="hero-actions">
-        <a href="#projetos" class="btn btn-primary">
-          Ver projetos
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
-        <!-- Substitua o href pelo link real do seu CV no Google Drive ou similar -->
-        <a href="#" class="btn btn-secondary" target="_blank" rel="noopener">
-          Baixar CV
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        </a>
+          <div class="hero-actions">
+            <a href="#projetos" class="btn btn-primary">
+              Ver projetos
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <!-- Botão de CV: substitua o arquivo em /cv/ ou atualize o href quando tiver o PDF pronto -->
+            <a id="cv-link" href="cv/paulo-ricardo-cv.pdf" class="btn btn-secondary" target="_blank" rel="noopener">
+              Baixar CV
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-photo">
+          <img src="img/profile-placeholder.svg" alt="Foto de Paulo Ricardo" id="hero-photo">
+        </aside>
       </div>
 
     </div>
@@ -98,38 +104,27 @@
       <p class="section-label">Sobre mim</p>
 
       <div class="sobre-grid">
-        <div class="sobre-text">
-          <!-- EDITE: escreva sobre você em 2-3 parágrafos curtos -->
+        <div class="sobre-text sobre-text--wide">
+          <!-- Texto estendido 'Sobre mim' -->
           <p>
             Sou estudante de Engenharia da Computação apaixonado por criar coisas que funcionam —
-            seja um sistema web, uma automação ou um circuito físico. Gosto especialmente de
-            projetos que conectam o mundo digital ao mundo real.
+            seja um sistema web, uma automação ou um circuito físico. Gosto de transformar ideias
+            em protótipos funcionais e aplicações simples que resolvem problemas reais. Nos meus
+            projetos, costumo documentar decisões técnicas, trade-offs e resultados para facilitar
+            a replicação e o aprendizado.
           </p>
           <p>
-            Tenho experiência com desenvolvimento frontend, sistemas backend e prototipagem
-            de hardware com Arduino. Estou sempre aprendendo e buscando aplicar o que aprendo
-            em projetos práticos.
+            Trabalho com frontend e prototipagem de circuitos fisicos com Arduino. Tenho experiência em
+            construir interfaces responsivas. Busco sempre melhorar a usabilidade e a performance dos meus projetos, alinhando código limpo
+            com entregáveis testáveis.
+            
           </p>
-        </div>
-
-        <div class="stats-grid">
-          <!-- EDITE: substitua os números reais -->
-          <div class="stat-card">
-            <div class="stat-num">+3</div>
-            <div class="stat-desc">Projetos de software</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num">+2</div>
-            <div class="stat-desc">Projetos de hardware</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num">7º</div>
-            <div class="stat-desc">Semestre na faculdade</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num">2027</div>
-            <div class="stat-desc">Formatura prevista</div>
-          </div>
+          <p>
+            Além disso, gosto de explorar automações que otimizem processos repetitivos e de
+            compartilhar aprendizados através de documentação e demos. Se quiser ver algo em ação,
+            confira os projetos abaixo ou entre em contato — fico feliz em conversar sobre
+            oportunidades e colaborações.
+          </p>
         </div>
       </div>
 
@@ -155,18 +150,9 @@
       <div class="skills-grid">
         <span class="skill-pill" data-cat="software">HTML &amp; CSS</span>
         <span class="skill-pill" data-cat="software">JavaScript</span>
-        <span class="skill-pill" data-cat="software">Python</span>
-        <span class="skill-pill" data-cat="software">C / C++</span>
         <span class="skill-pill" data-cat="software">React</span>
         <span class="skill-pill" data-cat="software">Node.js</span>
-        <span class="skill-pill" data-cat="hardware">Arduino</span>
-        <span class="skill-pill" data-cat="hardware">Eletrônica básica</span>
-        <span class="skill-pill" data-cat="hardware">Prototipagem</span>
-        <span class="skill-pill" data-cat="hardware">Sensores &amp; atuadores</span>
-        <span class="skill-pill" data-cat="ferramentas">Git &amp; GitHub</span>
-        <span class="skill-pill" data-cat="ferramentas">VS Code</span>
-        <span class="skill-pill" data-cat="ferramentas">Figma</span>
-        <span class="skill-pill" data-cat="ferramentas">Linux</span>
+        <span class="skill-pill" data-cat="software">TypeScript</span>
       </div>
 
     </div>
@@ -207,8 +193,7 @@
               Página responsiva focada em amostragem de um elemento visual, o efeito "parallax".
             </p>
             <div class="proj-tags">
-              <span class="proj-tag">HTML</span>
-              <span class="proj-tag">CSS</span>
+              <span class="proj-tag">HTML &amp; CSS</span>
             </div>
             <div class="proj-links">
               <a href="https://pauloricardo-05.github.io/ParallaxModel/" class="proj-link" target="_blank" rel="noopener">
@@ -245,8 +230,7 @@
               Site responsivo com o intuito de publicação de materiais sobre o mundo tech e relativos.
             </p>
             <div class="proj-tags">
-              <span class="proj-tag">HTML</span>
-              <span class="proj-tag">CSS</span>
+              <span class="proj-tag">HTML &amp; CSS</span>
               <span class="proj-tag">JavaScript</span>
             </div>
             <div class="proj-links">
@@ -291,8 +275,7 @@
               <span class="proj-tag">React</span>
               <span class="proj-tag">Vite</span>
               <span class="proj-tag">JavaScript</span>
-              <span class="proj-tag">HTML</span>
-              <span class="proj-tag">CSS</span>
+              <span class="proj-tag">HTML &amp; CSS</span>
             </div>
             <div class="proj-links">
               <!-- Sem link de código — mostre o que puder -->
@@ -340,8 +323,7 @@
               Minha contribuição: frontend completo em React e integração com a API REST.
             </div>
             <div class="proj-tags">
-              <span class="proj-tag">HTML</span>
-              <span class="proj-tag">CSS</span>
+              <span class="proj-tag">HTML &amp; CSS</span>
               <span class="proj-tag">TypeScript</span>
               <span class="proj-tag">Javascript</span>
             </div>
@@ -371,39 +353,7 @@
   </section>
 
 
-  <!-- ============================================================
-       BLOG
-       ============================================================ -->
-  <section id="blog">
-    <div class="container">
-      <p class="section-label">Blog / Artigos</p>
-
-      <div class="blog-list">
-        <!--
-          OPÇÃO A — artigo em site externo (LinkedIn, Medium, Dev.to etc):
-            <a href="https://linkedin.com/pulse/seu-artigo" target="_blank" rel="noopener">
-
-          OPÇÃO B — artigo local (arquivo dentro do projeto):
-            <a href="blog/nome-do-artigo.html">
-
-          Troque o href="#" pelo link real de cada artigo.
-        -->
-        <div class="blog-item">
-          <a href="blog/arduino-aprendizados.html"><span class="blog-title">O que aprendi construindo meu primeiro projeto com Arduino</span></a>
-          <span class="blog-date">Abr 2025</span>
-        </div>
-        <div class="blog-item">
-          <a href="blog/primeira-landing-page.html"><span class="blog-title">Como estruturei minha primeira landing page do zero</span></a>
-          <span class="blog-date">Mar 2025</span>
-        </div>
-        <div class="blog-item">
-          <a href="blog/hardware-e-software.html"><span class="blog-title">Hardware e software: o que me fez querer as duas áreas</span></a>
-          <span class="blog-date">Jan 2025</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
+  <!-- seção de blog removida conforme solicitado -->
 
 
   <!-- ============================================================
