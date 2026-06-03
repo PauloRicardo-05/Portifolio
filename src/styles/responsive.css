@@ -1,0 +1,35 @@
+﻿/* ============================================================
+   RESPONSIVO
+   ============================================================ */
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+  .btn-menu { display: flex; }
+
+  #hero { padding: 64px 0 56px; }
+
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-photo { order: 2; margin-top: 18px; }
+
+  .sobre-grid { grid-template-columns: 1fr; gap: 32px; }
+  .cert-grid,
+  .github-grid,
+  .proj-grid { grid-template-columns: 1fr; }
+
+  .projetos-header,
+  .github-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+  section { padding: 56px 0; }
+
+  .back-to-top { right: 16px; bottom: 16px; }
+  .exit-print-mode { right: 16px; bottom: 68px; }
+  .easter-card { padding: 26px; }
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
+  .cert-grid,
+  .github-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 900px) {
+  .nav-links { gap: 18px; }
+}
+

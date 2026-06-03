@@ -1,51 +1,94 @@
-# Portfólio — Engenharia da Computação
+﻿# Portfolio Paulo Ricardo
 
-Portfólio pessoal hospedado no GitHub Pages.  
-Feito com HTML, CSS e JavaScript puros — sem frameworks, sem dependências.
+Aplicacao React + Vite + TypeScript do portfolio pessoal de Paulo Ricardo.
 
-## Estrutura
+## O que esta incluido
 
-```
-portfolio_paulo_v2/
-├── index.html          # Página principal
-├── css/
-│   └── style.css       # Todos os estilos
-├── js/
-│   └── main.js         # Theme toggle, filtros, scroll spy
-├── img/
-│   └── profile-placeholder.svg
-└── blog/               # artigos locais
-```
+- Hero com foto, links e modo curriculo.
+- Secao Sobre mim.
+- Certificados & Conquistas.
+- Habilidades clicaveis que filtram os projetos.
+- Projetos com modal de foco e demonstracao em video.
+- GitHub Activity com repositorios recentes via API publica.
+- Contato, footer, tema claro/escuro, barra de progresso, botao voltar ao topo e easter egg.
 
-## Como personalizar
+## Comandos
 
-1. **Troque `[SEU NOME]`** em `index.html` e na tag `<title>`
-2. **Hero**: edite a descrição em `#hero`
-3. **Sobre**: atualize os textos em `#sobre`
-4. **Habilidades**: adicione ou remova `.skill-pill` no `#habilidades`
-5. **Projetos**: duplique um `.proj-card` e preencha com seus dados
-6. **Contato**: troque os `href` pelos seus links reais
-
-## Tipos de card de projeto
-
-- **Solo + código público**: usa `.badge-solo` + links para demo e GitHub
-- **Equipe / código privado**: usa `.badge-team` + `.proj-contribution` + link para demo ou vídeo
-- **Hardware (Arduino)**: mesma estrutura, com foto do hardware no `.proj-thumb`
-
-## Como hospedar no GitHub Pages
-
-O deploy está configurado para publicar o conteúdo de `portfolio_paulo_v2` automaticamente.
-
-1. Faça push para a branch `main`.
-2. A ação GitHub Workflow em `.github/workflows/deploy.yml` criará/atualizará a branch `gh-pages`.
-3. Em **Settings → Pages**, carregue a branch **gh-pages**.
-
-## Adicionar imagens dos projetos
-
-Coloque as imagens em `portfolio_paulo_v2/img/` e no card substitua o bloco de ícone por:
-
-```html
-<img src="img/nome-do-projeto.gif" alt="Descrição do projeto">
+```powershell
+npm install
+npm run dev
+npm run build
+npm run preview
 ```
 
-GIFs curtos (5–10s) funcionam muito bem para mostrar sistemas em funcionamento.
+## Desenvolvimento
+
+```txt
+src/components/   Componentes da interface
+src/data/         Dados editaveis do portfolio
+src/styles/       CSS separado por area
+src/types/        Tipos TypeScript
+public/           Arquivos estaticos servidos pelo Vite
+```
+
+## Dados editaveis
+
+### Projetos
+
+Edite `src/data/projects.ts`.
+
+```ts
+{
+  title: 'Nome do projeto',
+  image: '/img/projeto.png',
+  imageAlt: 'Descricao da imagem',
+  type: 'Software',
+  badge: 'Solo',
+  description: 'Resumo do projeto.',
+  tags: ['React', 'TypeScript'],
+  demoUrl: 'https://...',
+  githubUrl: 'https://...',
+}
+```
+
+### Habilidades
+
+Edite `src/data/skills.ts`.
+
+As habilidades sao usadas tambem como filtro dos projetos. Para o filtro funcionar, o nome da habilidade precisa bater com uma tag em `projects.ts`.
+
+Exemplo:
+
+```ts
+{ name: 'JavaScript', category: 'software' }
+```
+
+E no projeto:
+
+```ts
+tags: ['JavaScript']
+```
+
+### Certificados
+
+Edite `src/data/certificates.ts`.
+
+```ts
+{
+  title: 'Nome do certificado',
+  issuer: 'Instituicao',
+  date: 'Concluido em marco de 2025',
+  href: '#',
+  icon: 'award',
+}
+```
+
+## Publicacao
+
+Gere o build:
+
+```powershell
+npm run build
+```
+
+Publique o conteudo gerado em `dist/` conforme a estrategia de deploy do repositorio.
