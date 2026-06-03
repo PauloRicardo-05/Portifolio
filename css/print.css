@@ -1,0 +1,103 @@
+﻿/* ============================================================
+   PRINT MODE
+   ============================================================ */
+body.print-mode,
+body.print-mode[data-theme="dark"] {
+  --clr-bg: #ffffff;
+  --clr-bg-soft: #ffffff;
+  --clr-bg-card: #ffffff;
+  --clr-border: rgba(0,0,0,0.18);
+  --clr-border-md: rgba(0,0,0,0.28);
+  --clr-text: #000000;
+  --clr-text-2: #222222;
+  --clr-text-3: #555555;
+  --clr-accent: #000000;
+  background: #ffffff;
+  color: #000000;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+body.print-mode #navbar,
+body.print-mode .scroll-progress,
+body.print-mode .back-to-top,
+body.print-mode .btn-theme,
+body.print-mode .btn-menu,
+body.print-mode .proj-thumb,
+body.print-mode .modal-overlay,
+body.print-mode .easter-overlay {
+  display: none !important;
+}
+
+body.print-mode section {
+  padding: 24px 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+body.print-mode .container {
+  max-width: 820px;
+  padding: 0 32px;
+}
+
+body.print-mode .hero-grid,
+body.print-mode .sobre-grid {
+  display: block;
+}
+
+body.print-mode .hero-photo,
+body.print-mode .hero-actions,
+body.print-mode .proj-links,
+body.print-mode .social-links,
+body.print-mode .skill-filters,
+body.print-mode .cert-link,
+body.print-mode .github-repo-link {
+  display: none;
+}
+
+body.print-mode .proj-grid,
+body.print-mode .cert-grid,
+body.print-mode .github-grid {
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+body.print-mode .proj-card,
+body.print-mode .cert-card,
+body.print-mode .github-card {
+  box-shadow: none;
+  transform: none;
+  break-inside: avoid;
+  padding: 12px;
+}
+
+@media print {
+  @page { size: A4; margin: 14mm; }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-family: Georgia, 'Times New Roman', serif !important;
+  }
+
+  #navbar,
+  .scroll-progress,
+  .back-to-top,
+  .exit-print-mode,
+  .hero-actions,
+  .proj-links,
+  .social-links,
+  .modal-overlay,
+  .easter-overlay {
+    display: none !important;
+  }
+
+  section {
+    padding: 18px 0 !important;
+    border-bottom: 1px solid #dddddd !important;
+  }
+
+  .container {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+}
+
