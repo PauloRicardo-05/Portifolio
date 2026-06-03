@@ -1,24 +1,86 @@
-# Portfólio (GitHub Pages ready)
+﻿# Paulo Ricardo | Portfolio
 
-Site pessoal pronto para deploy no GitHub Pages a partir da pasta `portfolio_paulo_v2`.
+Portfolio pessoal desenvolvido para apresentar projetos, habilidades, certificados e atividade real no GitHub.
 
-## Como publicar
+A proposta do site e reunir em uma experiencia simples e responsiva os principais trabalhos de Paulo Ricardo, estudante de Engenharia da Computacao, com foco em desenvolvimento web, interfaces responsivas e projetos que conectam software e hardware.
 
-1. Configure o repositório no GitHub.
-2. Deixe a branch `main` com os arquivos deste projeto.
-3. A ação de deploy irá gerar a branch `gh-pages` automaticamente quando você fizer push.
-4. Em **Settings → Pages**, escolha **Branch: gh-pages** e salve.
+## Destaques
 
-> O deploy está automatizado via `.github/workflows/deploy.yml`.
+- Interface responsiva com tema claro e escuro.
+- Cards de projetos com foco em modal.
+- Filtro de projetos por habilidade clicavel.
+- Secao de certificados e conquistas.
+- Integracao com a API publica do GitHub.
+- Botao voltar ao topo e barra de progresso de scroll.
+- Easter egg com Konami Code.
+- Modo curriculo para impressao/exportacao em PDF.
 
-## Onde editar
+## Tecnologias
 
-- `portfolio_paulo_v2/index.html` — página principal
-- `portfolio_paulo_v2/css/style.css` — estilos
-- `portfolio_paulo_v2/js/main.js` — comportamento do site
-- `portfolio_paulo_v2/img/` — imagens e placeholders
+- React
+- TypeScript
+- Vite
+- CSS modularizado
+- GitHub API
 
-## Observações
+## Estrutura
 
-- O botão de CV está apontando para `portfolio_paulo_v2/cv/paulo-ricardo-cv.pdf` por enquanto.
-- Quando adicionar a sua foto, troque `portfolio_paulo_v2/img/profile-placeholder.svg` pelo arquivo real e mantenha o mesmo nome ou atualize o `src`.
+```txt
+portfolio_paulo_v2/
+  public/              # imagens, videos, favicon, blog e arquivos estaticos
+  src/
+    components/        # componentes React
+    data/              # projetos, habilidades e certificados
+    styles/            # CSS separado por responsabilidade
+    types/             # tipos TypeScript
+    App.tsx            # composicao principal da pagina
+    main.tsx           # entrada do React
+```
+
+## Rodando localmente
+
+```powershell
+cd portfolio_paulo_v2
+npm install
+npm run dev
+```
+
+Abra no navegador:
+
+```txt
+http://127.0.0.1:5173
+```
+
+Para expor na rede local:
+
+```powershell
+npm run dev -- --host 0.0.0.0
+```
+
+## Build de producao
+
+```powershell
+npm run build
+```
+
+A versao final sera gerada em:
+
+```txt
+portfolio_paulo_v2/dist
+```
+
+## Edicao rapida
+
+- Projetos: `portfolio_paulo_v2/src/data/projects.ts`
+- Habilidades: `portfolio_paulo_v2/src/data/skills.ts`
+- Certificados: `portfolio_paulo_v2/src/data/certificates.ts`
+- Textos das secoes: `portfolio_paulo_v2/src/components/`
+- Estilos: `portfolio_paulo_v2/src/styles/`
+
+## Autor
+
+**Paulo Ricardo**
+
+- GitHub: [PauloRicardo-05](https://github.com/PauloRicardo-05)
+- LinkedIn: [Paulo Ricardo](https://www.linkedin.com/in/paulo-ricardo-9439a9263/)
+- E-mail: [pr54582@gmail.com](mailto:pr54582@gmail.com)
