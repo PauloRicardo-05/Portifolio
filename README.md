@@ -1,86 +1,94 @@
-﻿# Paulo Ricardo | Portfolio
+﻿# Portfolio Paulo Ricardo
 
-Portfolio pessoal desenvolvido para apresentar projetos, habilidades, certificados e atividade real no GitHub.
+Aplicacao React + Vite + TypeScript do portfolio pessoal de Paulo Ricardo.
 
-A proposta do site e reunir em uma experiencia simples e responsiva os principais trabalhos de Paulo Ricardo, estudante de Engenharia da Computacao, com foco em desenvolvimento web, interfaces responsivas e projetos que conectam software e hardware.
+## O que esta incluido
 
-## Destaques
+- Hero com foto, links e modo curriculo.
+- Secao Sobre mim.
+- Certificados & Conquistas.
+- Habilidades clicaveis que filtram os projetos.
+- Projetos com modal de foco e demonstracao em video.
+- GitHub Activity com repositorios recentes via API publica.
+- Contato, footer, tema claro/escuro, barra de progresso, botao voltar ao topo e easter egg.
 
-- Interface responsiva com tema claro e escuro.
-- Cards de projetos com foco em modal.
-- Filtro de projetos por habilidade clicavel.
-- Secao de certificados e conquistas.
-- Integracao com a API publica do GitHub.
-- Botao voltar ao topo e barra de progresso de scroll.
-- Easter egg com Konami Code.
-- Modo curriculo para impressao/exportacao em PDF.
-
-## Tecnologias
-
-- React
-- TypeScript
-- Vite
-- CSS modularizado
-- GitHub API
-
-## Estrutura
-
-```txt
-portfolio_paulo_v2/
-  public/              # imagens, videos, favicon, blog e arquivos estaticos
-  src/
-    components/        # componentes React
-    data/              # projetos, habilidades e certificados
-    styles/            # CSS separado por responsabilidade
-    types/             # tipos TypeScript
-    App.tsx            # composicao principal da pagina
-    main.tsx           # entrada do React
-```
-
-## Rodando localmente
+## Comandos
 
 ```powershell
-cd portfolio_paulo_v2
 npm install
 npm run dev
+npm run build
+npm run preview
 ```
 
-Abra no navegador:
+## Desenvolvimento
 
 ```txt
-http://127.0.0.1:5173
+src/components/   Componentes da interface
+src/data/         Dados editaveis do portfolio
+src/styles/       CSS separado por area
+src/types/        Tipos TypeScript
+public/           Arquivos estaticos servidos pelo Vite
 ```
 
-Para expor na rede local:
+## Dados editaveis
 
-```powershell
-npm run dev -- --host 0.0.0.0
+### Projetos
+
+Edite `src/data/projects.ts`.
+
+```ts
+{
+  title: 'Nome do projeto',
+  image: '/img/projeto.png',
+  imageAlt: 'Descricao da imagem',
+  type: 'Software',
+  badge: 'Solo',
+  description: 'Resumo do projeto.',
+  tags: ['React', 'TypeScript'],
+  demoUrl: 'https://...',
+  githubUrl: 'https://...',
+}
 ```
 
-## Build de producao
+### Habilidades
+
+Edite `src/data/skills.ts`.
+
+As habilidades sao usadas tambem como filtro dos projetos. Para o filtro funcionar, o nome da habilidade precisa bater com uma tag em `projects.ts`.
+
+Exemplo:
+
+```ts
+{ name: 'JavaScript', category: 'software' }
+```
+
+E no projeto:
+
+```ts
+tags: ['JavaScript']
+```
+
+### Certificados
+
+Edite `src/data/certificates.ts`.
+
+```ts
+{
+  title: 'Nome do certificado',
+  issuer: 'Instituicao',
+  date: 'Concluido em marco de 2025',
+  href: '#',
+  icon: 'award',
+}
+```
+
+## Publicacao
+
+Gere o build:
 
 ```powershell
 npm run build
 ```
 
-A versao final sera gerada em:
-
-```txt
-portfolio_paulo_v2/dist
-```
-
-## Edicao rapida
-
-- Projetos: `portfolio_paulo_v2/src/data/projects.ts`
-- Habilidades: `portfolio_paulo_v2/src/data/skills.ts`
-- Certificados: `portfolio_paulo_v2/src/data/certificates.ts`
-- Textos das secoes: `portfolio_paulo_v2/src/components/`
-- Estilos: `portfolio_paulo_v2/src/styles/`
-
-## Autor
-
-**Paulo Ricardo**
-
-- GitHub: [PauloRicardo-05](https://github.com/PauloRicardo-05)
-- LinkedIn: [Paulo Ricardo](https://www.linkedin.com/in/paulo-ricardo-9439a9263/)
-- E-mail: [pr54582@gmail.com](mailto:pr54582@gmail.com)
+Publique o conteudo gerado em `dist/` conforme a estrategia de deploy do repositorio.
