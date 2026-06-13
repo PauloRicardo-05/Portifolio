@@ -1,9 +1,10 @@
 ﻿import type { Project } from '../types/portfolio';
+import { assetPath } from '../utils/assetPath';
 
 export const projects: Project[] = [
   {
     title: 'Demonstração Efeito Parallax',
-    image: '/img/Parallax.png',
+    image: assetPath('/img/Parallax.png'),
     imageAlt: 'Print do projeto Demonstração Efeito Parallax',
     type: 'Software',
     badge: 'Solo',
@@ -14,7 +15,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Debugando o Futuro',
-    image: '/img/Debugando.png',
+    image: assetPath('/img/Debugando.png'),
     imageAlt: 'Print do projeto Debugando o Futuro',
     type: 'Software',
     badge: 'Solo',
@@ -25,7 +26,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Visualizador de algoritmos',
-    image: '/img/Algoviz.png',
+    image: assetPath('/img/Algoviz.png'),
     imageAlt: 'Print do sistema visualizador de algoritmos',
     type: 'Software',
     badge: 'Solo',
@@ -36,13 +37,14 @@ export const projects: Project[] = [
   },
   {
     title: 'Agro Gestão',
-    image: '/img/AgroGest%C3%A3o.png',
+    image: assetPath('/img/AgroGest%C3%A3o.png'),
     imageAlt: 'Foto do projeto Agro Gestão',
     type: 'Software · Sistema',
     badge: 'Equipe',
     description: 'Sistema dedicado a mostrar informações relevantes para o produtor rural, como dados de gastos, receitas, lucros e outros indicadores importantes para a gestão eficiente da propriedade.',
     contribution: 'Minha contribuição: frontend completo em React e integração com a API REST.',
     tags: ['HTML & CSS', 'TypeScript', 'JavaScript'],
-    videoUrl: '/img/AgroGest%C3%A3o.mp4',
+    videoUrl: assetPath('/img/AgroGest%C3%A3o.mp4'),
   },
 ];
+
