@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
-  <rect width="100%" height="100%" fill="#f0f0ee"/>
-  <g transform="translate(300,220)">
-    <circle r="120" fill="#e6e6e4" stroke="#d0d0ce" stroke-width="2"/>
-    <text x="0" y="170" font-family="Inter, Arial, sans-serif" font-size="34" text-anchor="middle" fill="#9a9a98">Sua foto aqui</text>
-  </g>
-</svg>

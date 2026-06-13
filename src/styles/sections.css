@@ -24,7 +24,7 @@
   border-radius: 14px;
   object-fit: cover;
   border: 0.5px solid var(--clr-border);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: var(--shadow-md);
   background: var(--clr-bg-card);
 }
 
@@ -41,7 +41,7 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #3b9a5a;
+  background: var(--clr-accent);
   flex-shrink: 0;
 }
 
@@ -86,7 +86,7 @@
 
 .btn-primary {
   background: var(--clr-accent);
-  color: var(--clr-bg);
+  color: #fff;
   border: 1px solid var(--clr-accent);
 }
 .btn-primary:hover { opacity: 0.85; }
@@ -192,7 +192,7 @@
 .filter-btn:hover { color: var(--clr-text); border-color: var(--clr-text-3); }
 .filter-btn.active {
   background: var(--clr-accent);
-  color: var(--clr-bg);
+  color: #fff;
   border-color: var(--clr-accent);
 }
 
@@ -216,7 +216,7 @@
 .skill-pill.hidden { display: none; }
 .skill-pill.selected {
   background: var(--clr-accent);
-  color: var(--clr-bg);
+  color: #fff;
   border-color: var(--clr-accent);
 }
 
@@ -245,9 +245,9 @@
 
 .cert-card:hover,
 .github-card:hover {
-  border-color: var(--clr-border-md);
+  border-color: var(--clr-accent);
   transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+  box-shadow: var(--shadow-sm);
 }
 
 .cert-icon {
@@ -342,9 +342,9 @@
   cursor: pointer;
 }
 .proj-card:hover {
-  border-color: var(--clr-border-md);
+  border-color: var(--clr-accent);
   transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+  box-shadow: var(--shadow-sm);
 }
 .proj-card:focus-visible {
   outline: 2px solid var(--clr-accent);
@@ -416,8 +416,7 @@
   padding: 8px 10px;
   background: var(--clr-bg-soft);
   border-radius: var(--radius-sm);
-  border-left: 2px solid var(--clr-border-md);
-  border-radius: 0;
+  border-left: 2px solid var(--clr-accent);
   margin-bottom: 14px;
   line-height: 1.5;
 }
@@ -427,8 +426,8 @@
   font-size: 10px;
   padding: 3px 9px;
   border-radius: 8px;
-  background: var(--clr-bg-soft);
-  color: var(--clr-text-3);
+  background: var(--clr-accent-soft);
+  color: var(--clr-accent);
   border: 0.5px solid var(--clr-border);
 }
 
@@ -569,4 +568,7 @@ footer {
 }
 footer .container { display: flex; align-items: center; justify-content: space-between; width: 100%; }
 .footer-text { font-size: 12px; color: var(--clr-text-3); }
+
+
+
 

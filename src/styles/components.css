@@ -9,7 +9,7 @@
   border: 0.5px solid var(--clr-border-md);
   background: var(--clr-bg-card);
   color: var(--clr-text);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+  box-shadow: var(--shadow-sm);
   opacity: 0;
   pointer-events: none;
   transform: translateY(8px);
@@ -35,7 +35,7 @@
 
 .back-to-top:hover,
 .exit-print-mode:hover {
-  background: var(--clr-bg-soft);
+  background: var(--clr-accent-soft);
 }
 
 .back-to-top svg {
@@ -84,7 +84,7 @@
   background: var(--clr-bg-card);
   color: var(--clr-text);
   padding: 32px;
-  box-shadow: 0 24px 70px rgba(0,0,0,0.45);
+  box-shadow: var(--shadow-md);
   transform: translateY(12px) scale(0.98);
   transition: transform 0.24s ease;
 }
@@ -188,7 +188,7 @@
 .project-card-modal .proj-card {
   cursor: default;
   min-height: 0;
-  box-shadow: 0 24px 70px rgba(0,0,0,0.45);
+  box-shadow: var(--shadow-md);
   border-color: rgba(255,255,255,0.2);
 }
 
@@ -255,4 +255,5 @@
   }
   .project-card-modal .proj-body { padding: 18px; }
 }
+
 
