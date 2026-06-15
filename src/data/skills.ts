@@ -6,4 +6,5 @@ export const skills: Skill[] = [
   { name: 'React', category: 'software' },
   { name: 'Node.js', category: 'software' },
   { name: 'TypeScript', category: 'software' },
+  { name: 'UI/UX', category: 'software' },
 ];
