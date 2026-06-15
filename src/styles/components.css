@@ -112,8 +112,8 @@
   pointer-events: none;
   opacity: 0.26;
   background:
-    radial-gradient(circle at 16% 20%, #3b9a5a 0 3px, transparent 4px),
-    radial-gradient(circle at 72% 18%, #1a6fa8 0 3px, transparent 4px),
+    radial-gradient(circle at 16% 20%, #2563eb 0 3px, transparent 4px),
+    radial-gradient(circle at 72% 18%, #60a5fa 0 3px, transparent 4px),
     radial-gradient(circle at 88% 52%, #d89b2b 0 3px, transparent 4px),
     radial-gradient(circle at 24% 74%, #a84b6a 0 3px, transparent 4px),
     radial-gradient(circle at 58% 86%, var(--clr-accent) 0 3px, transparent 4px);
@@ -255,5 +255,6 @@
   }
   .project-card-modal .proj-body { padding: 18px; }
 }
+
 
 
