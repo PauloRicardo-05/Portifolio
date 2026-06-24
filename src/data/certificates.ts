@@ -2,23 +2,24 @@
 
 export const certificates: Certificate[] = [
   {
-    title: 'Fundamentos de Desenvolvimento Web',
-    issuer: 'Instituto Exemplo Tech',
-    date: 'Concluído em março de 2025',
-    href: '#',
+    title: 'Certificado de Participação em Hackathon',
+    issuer: 'NASA',
+    date: 'Concluído em 05 de outubro de 2025',
+    href: 'doc/Certificado NASA.pdf',
     icon: 'award',
   },
   {
-    title: 'JavaScript para Interfaces Interativas',
-    issuer: 'Academia Frontend Lab',
-    date: 'Concluído em julho de 2025',
-    href: '#',
+    title: 'Gestão e Infraestrutura de TI',
+    issuer: 'FIAP',
+    date: 'Concluído em 18 de janeiro de 2026',
+    href: 'doc/Infra de TI.pdf',
     icon: 'book',
   },
   {
-    title: 'Introdução a Sistemas Embarcados',
-    issuer: 'Centro Maker Digital',
-    date: 'Concluído em novembro de 2025',
+    title: 'Inteligencia Artificial responsável',
+    issuer: 'FIAP',
+    date: 'Concluído em 28 de maio de 2026',
+    href: 'doc/Inteligencia artificial responsável.pdf',
     icon: 'layers',
   },
 ];
