@@ -16,10 +16,10 @@ export const certificates: Certificate[] = [
     icon: 'book',
   },
   {
-    title: 'Inteligencia Artificial responsável',
+    title: 'Inteligencia Artificial responsavel',
     issuer: 'FIAP',
     date: 'Concluído em 28 de maio de 2026',
-    href: 'doc/Inteligencia artificial.pdf',
+    href: 'doc/Inteligencia artificial responsavel.pdf',
     icon: 'layers',
   },
 ];
